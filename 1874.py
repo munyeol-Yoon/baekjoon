@@ -20,34 +20,6 @@
 # 8. 바깓쪽 반복문에 if 문을 적는데 스택의 끝에 있는 값이 init 의 값과 같아진다면 stack 을 pop 하고 char 에 - 를 추가한다.
 # 9. 그외에는 No 를 출력하고 종료한다.
 
-# n = int(input())
-# init = []
-# stack = []
-# char = []
-# start = 1
-# # 1 2 3 4 5 6 7 8
-# for i in range(n):
-#     init.append(int(input()))
-# print(init)
-# for i in init: # i = 4
-#     print(stack)
-#     for j in range(start, i+1): # j = 1
-#         stack.append(j)
-#         char.append('+')
-#         start += 1
-#     if stack[-1] == i:
-#         stack.pop()
-#         char.append('-')
-#     else:
-#         print('No')
-#         break
-# print(stack)
-# print(char)
-    
-
-
-    
-
 n = int(input())
 start = 1
 stack = []
