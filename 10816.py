@@ -113,3 +113,34 @@ print(' '.join(str(answer[mIndex]) for mIndex in M_list))
 # numbers = list(map(int, sys.stdin.readline().split()))
 # for i in numbers:
 #     print(cards[i], end = ' ')
+
+
+# 내가 포기했던 방식으로 다른사람이 푼 코드 =======================
+# import sys
+# input = sys.stdin.readline
+
+# N = int(input())
+# array = sorted(list(map(int, input().split())))
+# M = int(input())
+# target_array = list(map(int, input().split()))
+
+# def binaryF(array, target, start, end):
+#     cnt = 0
+#     while start <= end:
+#         mid = (start+end)//2
+#         if array[mid] == target:
+#             for i in range(start, end+1):
+#                 if array[i] == target:
+#                     cnt += 1
+#             return cnt
+#         elif array[mid] < target:
+#             start = mid + 1
+#         else:
+#             end = mid - 1
+#     return 0        
+    
+# d = {}
+# for m in target_array:
+#     if m not in d:
+#         d[m] = binaryF(array,m,0,N-1)
+#     print(str(d[m]), end = ' ')
